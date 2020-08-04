@@ -549,6 +549,7 @@ type Envelope struct {
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
+	Data                 []byte
 }
 
 func (m *Envelope) Reset()         { *m = Envelope{} }
